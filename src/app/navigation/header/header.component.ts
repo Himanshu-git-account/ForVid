@@ -1,23 +1,30 @@
-import { Component, OnInit, EventEmitter, Output} from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import {MDCDrawer, MDCDrawerFoundation} from "@material/drawer";
+
+declare var mdc: any;
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, AfterViewInit {
 
-  @Output() SideNavigationToggle = new EventEmitter();
+  @ViewChild('drawer') drawerEl: ElementRef;
+  private drawer;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
   }
 
-  onToggleOpenSidenav() {
+  ngAfterViewInit() {
+    let drawer = new MDCDrawerFoundation(this.drawerEl);
+    drawer.init();
+  }
 
-    this.SideNavigationToggle.emit();
-
+  public toggleDrawer(): void {
+    this.drawer.open();
   }
 
 }

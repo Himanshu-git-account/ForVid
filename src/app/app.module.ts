@@ -60,9 +60,13 @@ import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
     BrowserAnimationsModule,
     MaterialModule,
     AppRoutingModule,
-    FlexLayoutModule
+
+    FlexLayoutModule,
     ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+// ng config --global defaults.styleExt=scss

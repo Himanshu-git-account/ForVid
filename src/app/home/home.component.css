@@ -1,10 +1,15 @@
 .hero-container {
   background: url(/assets/images/home_beach.jpg)center center no-repeat;
   background-size: cover;
+  height: 140vh;
 }
 
 .book-now-container {
   padding: 35px 115px;
+}
+/* We block highlighting all the elements in header-container */
+.header-container > * {
+  user-select: none;
 }
 
 .book-now-button {
@@ -17,9 +22,19 @@
 
 .header-container {
   /* height: 100vh; */
-  padding: 60px 20px;
+  padding: 0 3rem;
+  padding-top: 13rem;
   text-align: center;
   max-width: 608px;
+}
+.header-container h2 {
+  color: rgba(0, 0, 0, 0.6)
+}
+.header-container .icon {
+  margin-top: 2rem;
+  transform: rotate(90deg);
+  font-size: 6rem;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .mat-display-4 {
@@ -51,37 +66,55 @@
 }
 
 .thailand {
-  transform: translate(-50%, 50%);
+  transform: translate(0, -35%);
   width: 100%;
   text-align: center;
   position: relative;
 }
-
-
 .thailand h3 {
   -webkit-text-fill-color: transparent;
   background: url(/assets/images/thailand_text_background.jpg)bottom right repeat;
+  background-size: cover;
   -webkit-background-clip: text;
   text-transform: uppercase;
   font-stretch: normal;
   font-size: 200px;
   font-family: Rubik, sans-serif;
-  letter-spacing: 0.09em;
+  /*letter-spacing: 0.05em;*/
   font-weight: 500;
-  position: relative;
-  left: 50%;
-  top:58%;  
+
+  /* We block highlighting 'THAILAND' word */
+  user-select: none;
 }
 
 .home-section {
   position: relative;
   padding: 100px 20px;
-  transform: transale3d(0,0,0);
+  transform: translate3d(0,0,0);
   transition: top .3s cubic-bezier(.4,0,.2,1);
   text-align: center;
 }
+.home-section p.place {
+  color: #8dcacf;
+}
+.home-section p.about {
+  /* Add some letter-spacing*/
+  letter-spacing: 0.05rem;
+}
 .home-section .mat-subheading-3 {
   text-transform: uppercase;
+}
+.home-section .home-section-header hr {
+  border: 1px solid #8dcacf;
+  /* Set width of hr = 25% of user's screen width*/
+  width: 25vw;
+}
+.home-section .home-section-header .description {
+  padding: 0 20vw;
+}
+.home-section .home-section-header .description p {
+  font-size: 0.9rem;
+  letter-spacing: 0.07rem;
 }
 
 .rooms-home-display {

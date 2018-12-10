@@ -1,0 +1,10 @@
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "../../../theahotel";
+
+.mdc-top-app-bar {
+  @include mdc-top-app-bar-fill-color($mdc-theme-primary);
+}
+
+
+@import "@material/drawer/mdc-drawer";
+@import "@material/list/mdc-list";

@@ -1,61 +1,67 @@
-<div class="hero-container">
-  <div class="book-now-container">
-    <div fxFlex fxLayoutAlign="flex-end">
-      <button class="book-now-button" mat-stroked-button color="primary">
-        Book Now
-      </button>
-    </div>
-  </div>
-  <div class="header-container" flexbox fxLayout="column"  fxLayoutAlign="center center">
-      <h2 class="mat-display-1" color="white">Luxury Beach Front Resort</h2>
-      <h1 class="mat-display-4" fxFlex="66" [fxFlex.md]="780">Natai Beach  <br />Resort &amp; Spa</h1>
-  </div>
+<!--<div class="hero-container">-->
+  <!--&lt;!&ndash;<div class="book-now-container">&ndash;&gt;-->
+  <!--&lt;!&ndash;<div fxFlex fxLayoutAlign="flex-end">&ndash;&gt;-->
+  <!--&lt;!&ndash;&lt;!&ndash;<button class="book-now-button" mat-stroked-button color="primary">&ndash;&gt;&ndash;&gt;-->
+  <!--&lt;!&ndash;&lt;!&ndash;Book Now&ndash;&gt;&ndash;&gt;-->
+  <!--&lt;!&ndash;&lt;!&ndash;</button>&ndash;&gt;&ndash;&gt;-->
+  <!--&lt;!&ndash;</div>&ndash;&gt;-->
+  <!--&lt;!&ndash;</div>&ndash;&gt;-->
+  <!--<div class="header-container" flexbox fxLayout="column" fxLayoutAlign="center center">-->
+    <!--<h2 class="mat-display-1" color="white">LUXURY BEACH FRONT RESORT</h2>-->
+    <!--<h1 class="mat-display-4" fxFlex="66" [fxFlex.md]="780">NATAI BEACH <br/>RESORT &amp; SPA</h1>-->
+    <!--<i class="material-icons icon">play_circle_outline</i>-->
 
-  <div class="thailand" fxLayout="column" fxLayout="row" fxLayoutAlign="center center">
-    <h3>Thailand</h3>
-  </div>
-  
-</div>
+  <!--</div>-->
 
-<section class="home-section">
-  <div class="home-section-header">
-    <div fxLayout="column" fxLayoutAlign="center center">
-      <div>
-        <h2 class="mat-subheading-2 dark-secondary-text">Luxury Accomodation In Phanga</h2>
-      </div>
-      <div>
-        <h3 class="mat-subheading-3">Asia's Tropical Paradise</h3>
-      </div>
-      
-      <div>
-        <p style="text-align: center;"class="mat-body-1" fxFlex.gt-xs="70" fxFlexOffset.gt-xs="15">
-          Situated on the fine golden sands of Natai Beach, Natai Beach Resort & Spa is an exquisite, 106-room resort. A 25-minute drive from Phuket airport, the resort is based on local heritage and traditional Thai culture. It is a perfect vacation haven created to add comfort and relaxation, an ideal place for families and honeymooners.
-        </p>
-      </div>
-      
-    </div>
-  </div>
-  
-  <div class="rooms-home-display" fxLayout.xs="column" fxLayoutWrap fxLayoutAlign="center">
-    <mat-card class="rooms-suites" fxFlex="45%;" fxFlex.sm="100%">
-      <mat-card-header fxLayout="column" fxLayout="row" fxLayoutAlign="center center">
-        <h2>Rooms &amp; Suites</h2>
-      </mat-card-header> 
-      <mat-card-actions fxLayout="column" fxLayout="row" fxLayoutAlign="center center">
-        <button mat-raised-button color="primary">Explore</button>
-      </mat-card-actions>  
-    </mat-card>
-    <mat-card class="beach-houses" fxFlex="45%;" fxFlex.sm="100%">
-      <mat-card-header fxLayout="column" fxLayout="row" fxLayoutAlign="center center">
-        <h2>Beach Houses</h2>
-      </mat-card-header> 
-      <mat-card-actions fxLayout="column" fxLayout="row" fxLayoutAlign="center center">
-        <button mat-raised-button color="primary">Explore</button>
-      </mat-card-actions>  
-    </mat-card>
+  <!--&lt;!&ndash; Removed property of flex, because it's not needed here &ndash;&gt;-->
+  <!--&lt;!&ndash; Before: flex container was moved to the right and content to the left &ndash;&gt;-->
+  <!--&lt;!&ndash; Now: Block on it's position and text is centered. Same view without moving any block &ndash;&gt;-->
+  <!--<div class="thailand">-->
+    <!--<h3>Thailand</h3>-->
+  <!--</div>-->
+<!--</div>-->
 
-  </div>
-  
-  
-</section>
+<!--<section class="home-section">-->
+  <!--<div class="home-section-header">-->
+    <!--<div fxLayout="column" fxLayoutAlign="center center">-->
+      <!--&lt;!&ndash; Removed div around h2/h3 tags, because h2/h3 as block element as div&ndash;&gt;-->
+      <!--&lt;!&ndash; Changed h2 and h3 on  p.place and p.about&ndash;&gt;-->
+      <!--<p class="mat-subheading-2 place">Luxury Accomodation In Phanga</p>-->
+      <!--<p class="mdc-typography&#45;&#45;headline3">Luxury Accomodation In Phanga</p>-->
+      <!--<p class="">Luxury Accomodation In Phanga</p>-->
+      <!--<p class="mat-subheading-3 about">Asia's Tropical Paradise</p>-->
+      <!--<hr>-->
+      <!--<div class="description">-->
+        <!--<p class="mat-body-1">-->
+          <!--Situated on the fine golden sands of Natai Beach, Natai Beach Resort & Spa is an exquisite, 106-room resort. A-->
+          <!--25-minute drive from Phuket airport, the resort is based on local heritage and traditional Thai culture. It is-->
+          <!--a perfect vacation haven created to add comfort and relaxation, an ideal place for families and honeymooners.-->
+        <!--</p>-->
+      <!--</div>-->
+
+    <!--</div>-->
+  <!--</div>-->
+
+  <!--<div class="rooms-home-display" fxLayout.xs="column" fxLayoutWrap fxLayoutAlign="center">-->
+    <!--<mat-card class="rooms-suites" fxFlex="45%;" fxFlex.sm="100%">-->
+      <!--<mat-card-header fxLayout="column" fxLayout="row" fxLayoutAlign="center center">-->
+        <!--<h2>Rooms &amp; Suites</h2>-->
+      <!--</mat-card-header>-->
+      <!--<mat-card-actions fxLayout="column" fxLayout="row" fxLayoutAlign="center center">-->
+        <!--<button mat-raised-button color="primary">Explore</button>-->
+      <!--</mat-card-actions>-->
+    <!--</mat-card>-->
+    <!--<mat-card class="beach-houses" fxFlex="45%;" fxFlex.sm="100%">-->
+      <!--<mat-card-header fxLayout="column" fxLayout="row" fxLayoutAlign="center center">-->
+        <!--<h2>Beach Houses</h2>-->
+      <!--</mat-card-header>-->
+      <!--<mat-card-actions fxLayout="column" fxLayout="row" fxLayoutAlign="center center">-->
+        <!--<button mat-raised-button color="primary">Explore</button>-->
+      <!--</mat-card-actions>-->
+    <!--</mat-card>-->
+
+  <!--</div>-->
+
+
+<!--</section>-->
 
