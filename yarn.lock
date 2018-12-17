@@ -322,6 +322,19 @@
     "@material/animation" "^0.41.0"
     "@material/theme" "^0.41.0"
 
+"@material/grid-list@^0.42.0":
+  version "0.42.0"
+  resolved "https://registry.yarnpkg.com/@material/grid-list/-/grid-list-0.42.0.tgz#071fc185a7359eb17de8851cf92d33b62fac96cd"
+  dependencies:
+    "@material/base" "^0.41.0"
+    "@material/rtl" "^0.42.0"
+    "@material/theme" "^0.41.0"
+    "@material/typography" "^0.42.0"
+
+"@material/layout-grid@^0.41.0":
+  version "0.41.0"
+  resolved "https://registry.yarnpkg.com/@material/layout-grid/-/layout-grid-0.41.0.tgz#2e7d3be76313e0684d573b10c2c6a88b3230d251"
+
 "@material/list@^0.42.0":
   version "0.42.0"
   resolved "https://registry.yarnpkg.com/@material/list/-/list-0.42.0.tgz#7bf19c09f223c31b9bae6969361939e3cf8cea48"
@@ -349,6 +362,42 @@
 "@material/shape@^0.42.0":
   version "0.42.0"
   resolved "https://registry.yarnpkg.com/@material/shape/-/shape-0.42.0.tgz#784e117401ac5fe5f49411c34c86e62accb0f534"
+
+"@material/tab-bar@^0.42.0":
+  version "0.42.0"
+  resolved "https://registry.yarnpkg.com/@material/tab-bar/-/tab-bar-0.42.0.tgz#8acc21a597c2d1b0310e2ab007b541a5bb0e4a2d"
+  dependencies:
+    "@material/base" "^0.41.0"
+    "@material/elevation" "^0.41.0"
+    "@material/tab" "^0.42.0"
+    "@material/tab-scroller" "^0.42.0"
+
+"@material/tab-indicator@^0.41.0":
+  version "0.41.0"
+  resolved "https://registry.yarnpkg.com/@material/tab-indicator/-/tab-indicator-0.41.0.tgz#396fb0902621d1f5fff195abf77738de7d4a91d3"
+  dependencies:
+    "@material/animation" "^0.41.0"
+    "@material/base" "^0.41.0"
+    "@material/theme" "^0.41.0"
+
+"@material/tab-scroller@^0.42.0":
+  version "0.42.0"
+  resolved "https://registry.yarnpkg.com/@material/tab-scroller/-/tab-scroller-0.42.0.tgz#1a3d44efda8f3cc85b4f7e17095d647c22d13b35"
+  dependencies:
+    "@material/animation" "^0.41.0"
+    "@material/base" "^0.41.0"
+    "@material/tab" "^0.42.0"
+
+"@material/tab@^0.42.0":
+  version "0.42.0"
+  resolved "https://registry.yarnpkg.com/@material/tab/-/tab-0.42.0.tgz#d811c1e12acacff6dfc54050d70d4b9302280e32"
+  dependencies:
+    "@material/base" "^0.41.0"
+    "@material/ripple" "^0.42.0"
+    "@material/rtl" "^0.42.0"
+    "@material/tab-indicator" "^0.41.0"
+    "@material/theme" "^0.41.0"
+    "@material/typography" "^0.42.0"
 
 "@material/theme@^0.41.0":
   version "0.41.0"

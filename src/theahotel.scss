@@ -1,11 +1,23 @@
-//@import '~@angular/material/theming';
-//@import '~@angular/material/theming';
+$mdc-typography-font-family: "Rubik, Roboto, sans-serif";
+@import '~@angular/material/theming';
 @import "~@material/typography/mdc-typography";
 
-$mdc-theme-primary: #d7ebdf;
+
+$mdc-theme-primary-light: #d7ebdf;
 $mdc-theme-secondary: #feeae6;
 $mdc-theme-on-primary: #442b2d;
 $mdc-theme-on-secondary: #442b2d;
+
+
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
+
+
+
 
 //@include mat-core();
 //
