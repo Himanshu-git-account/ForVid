@@ -2,7 +2,7 @@
 @import "@material/drawer/mdc-drawer";
 @import "@material/list/mdc-list";
 
-@import "../../../theahotel";
+@import "../../../theahotel"; // To get variables
 
 @media screen and (min-width: $screen-md-min) {
 	#hamburger {
@@ -16,12 +16,15 @@
 }
 
 .mdc-top-app-bar {
+	/* We change the color of top app bar */
   @include mdc-top-app-bar-fill-color($mdc-theme-primary-light);
 }
 #site-navigation {
+	/* Set header as flex to position all the navigation links with same space between them */
 	display: flex;
 	justify-content: space-around;
 }
 #site-navigation .image {
+	/* 32PX is half of topAppBar height, that's by default = 64px; */
 	margin-top: 32px;
 }
