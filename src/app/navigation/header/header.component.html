@@ -66,10 +66,21 @@
   <div class="mdc-drawer-app-content">
     <header class="mdc-top-app-bar app-bar" #topAppBar id="app-bar">
       <div class="mdc-top-app-bar__row">
-        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start" id="hamburger">
           <button class="material-icons mdc-top-app-bar__navigation-icon mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"(click)="this.toggleDrawer()">
             menu
           </button>
+        </section>
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section" id="site-navigation">
+            <a class="mdc-top-app-bar__title mdc-typography--subtitle2" [routerLink]="['/']">HOME</a>
+            <a class="mdc-top-app-bar__title mdc-typography--subtitle2" [routerLink]="['accomodation']">ACCOMODATION</a>
+            <a class="mdc-top-app-bar__title mdc-typography--subtitle2" [routerLink]="['food-and-beverage']">FOOD &#38; BEVERAGE</a>
+            <a class="mdc-top-app-bar__title mdc-typography--subtitle2" [routerLink]="['/']" class="image">
+              <img src="assets/images/theahotel_logo.png" alt="logo">
+            </a>
+            <a class="mdc-top-app-bar__title mdc-typography--subtitle2" [routerLink]="['lifestyle']">LIFESTYLE</a>
+            <a class="mdc-top-app-bar__title mdc-typography--subtitle2" [routerLink]="['celebrations']">WEDDINGS &#38; CELEBRATIONS</a>
+            <a class="mdc-top-app-bar__title mdc-typography--subtitle2" [routerLink]="['offers']">OFFERS</a>
         </section>
       </div>
     </header>
@@ -80,6 +91,7 @@
       </div>
     </main>
   </div>
+
 
 
 
