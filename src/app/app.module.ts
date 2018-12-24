@@ -4,7 +4,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { MaterialModule } from './material.module';
+//import { MaterialModule } from './material.module';
 import { AccomodationComponent } from './accomodation/accomodation.component';
 import { RoomsComponent } from './accomodation/rooms/rooms.component';
 import { FoodAndBeverageComponent } from './food-and-beverage/food-and-beverage.component';
@@ -58,7 +58,7 @@ import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule,
+    //MaterialModule,
     AppRoutingModule,
 
     FlexLayoutModule,

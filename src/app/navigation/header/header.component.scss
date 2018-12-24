@@ -3,35 +3,34 @@
 @import "@material/list/mdc-list";
 
 @import "../../../theahotel";
-@import "@material/typography/mdc-typography";
 
 .mdc-top-app-bar {
   @include mdc-top-app-bar-fill-color($mdc-theme-primary-light);
 
   // To set header be on top, while content below it
   // TODO: Matar should know how fix it
-  position: static;
+  // position: static;
 }
 header {
-	height: 15vh;
+	// height: 15vh;
 }
 header > * {
-	height: 100%;
+	// height: 100%;
 }
 .top-navigation {
-	padding: 0 1rem;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
+	// padding: 0 1rem;
+	// width: 100%;
+	// height: 100%;
+	// display: flex;
+	// align-items: center;
+	// justify-content: space-around;
 }
-.top-navigation a {
-	position: relative;
-}
+// .top-navigation a {
+	// position: relative;
+// }
 .top-navigation a.image {
-	margin-top: 15vh;
+	// margin-top: 15vh;
 }
 .top-navigation a img {
-	width: 125%;
+	// width: 125%;
 }
