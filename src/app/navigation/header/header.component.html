@@ -3,9 +3,9 @@
         <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['accomodation']">ACCOMODATION</a>
         <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['food-and-beverage']">FOOD &#38; BEVERAGE</a>
         <ng-container *ngIf="showImage === 'true'">
-        <a class="image logo">
-          <img src="assets/images/theahotel_logo.png" alt="Thea Hotel">
-        </a>
+          <a class="image logo">
+            <img src="assets/images/theahotel_logo.png" alt="Thea Hotel">
+          </a>
         </ng-container>
         <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['lifestyle']">LIFESTYLE</a>
         <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['celebrations']">WEDDINGS &#38; CELEBRATIONS</a>
@@ -38,12 +38,14 @@
       </nav>
     </div>
 </aside>
+
 <div class="mdc-drawer-scrim">
 </div>
 
 <div class="mdc-drawer-app-content">
   <header class="mdc-top-app-bar" #topAppBar id="app-bar" [ngClass]="{'mdc-top-app-bar--prominent': this.isSmallScreen}">
     <div class="mdc-top-app-bar__row">
+      
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section" id="hamburger">
         <button class="material-icons mdc-top-app-bar__navigation-icon mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"(click)="this.toggleDrawer()">
           menu
