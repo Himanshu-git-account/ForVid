@@ -4,17 +4,6 @@
 
 @import "../../../theahotel"; // To get variables
 
-@media screen and (min-width: $screen-md-min) {
-	#hamburger {
-		display: none;
-	}
-}
-@media screen and (max-width: $screen-md-min) {
-	#site-navigation {
-		display: none;
-	}
-}
-
 .mdc-top-app-bar {
 	/* We change the color of top app bar */
   @include mdc-top-app-bar-fill-color($mdc-theme-primary-light);
@@ -27,4 +16,26 @@
 #site-navigation .image {
 	/* 32PX is half of topAppBar height, that's by default = 64px; */
 	margin-top: 32px;
+}
+#drawer .logo-wrapper {
+	padding: 1rem 2rem;
+
+}
+#drawer .logo-wrapper #logo {
+	width: 50%;
+
+}
+
+@media screen and (min-width: $screen-md-min) {
+	#hamburger {
+		display: none;
+	}
+}
+@media screen and (max-width: $screen-md-min) {
+	#site-navigation {
+		display: none;
+	}
+	#main-content div[class*="top-app-bar"] {
+		padding-top: 128px;
+	}
 }

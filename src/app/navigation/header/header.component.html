@@ -1,17 +1,25 @@
-<aside #drawer class="mdc-drawer mdc-drawer--modal">
+<aside #drawer id="drawer" class="mdc-drawer mdc-drawer--modal">
     <div class="mdc-drawer__content">
       <nav class="mdc-list">
+        <div class="logo-wrapper">
+          <img src="assets/images/theahotel_logo.png" alt="Thea Hotel" id="logo" aria-selected="false">
+        </div>
+        <hr class="mdc-list-divider">
         <a class="mdc-list-item mdc-list-item--activated" href="#" aria-selected="true">
-          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
-          <span class="mdc-list-item__text">Inbox</span>
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">favorite</i>
+          <span class="mdc-list-item__text">First link</span>
         </a>
         <a class="mdc-list-item" href="#">
-          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
-          <span class="mdc-list-item__text">Outgoing</span>
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">favorite</i>
+          <span class="mdc-list-item__text">Second link</span>
         </a>
         <a class="mdc-list-item" href="#">
-          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-          <span class="mdc-list-item__text">Drafts</span>
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">favorite</i>
+          <span class="mdc-list-item__text">Third link</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">favorite</i>
+          <span class="mdc-list-item__text">The fourth link</span>
         </a>
       </nav>
     </div>
@@ -19,7 +27,7 @@
 <div class="mdc-drawer-scrim">
 </div>
 <div class="mdc-drawer-app-content">
-  <header class="mdc-top-app-bar app-bar" #topAppBar id="app-bar">
+  <header class="mdc-top-app-bar" #topAppBar id="app-bar" [ngClass]="{'mdc-top-app-bar--prominent': this.isSmallScreen}">
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start" id="hamburger">
         <button class="material-icons mdc-top-app-bar__navigation-icon mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"(click)="this.toggleDrawer()">
@@ -31,7 +39,7 @@
           <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['accomodation']">ACCOMODATION</a>
           <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['food-and-beverage']">FOOD &#38; BEVERAGE</a>
           <a class="mdc-top-app-bar__title" [routerLink]="['/']" class="image">
-            <img src="assets/images/theahotel_logo.png" alt="logo">
+            <img src="assets/images/theahotel_logo.png" alt="Thea Hotel">
           </a>
           <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['lifestyle']">LIFESTYLE</a>
           <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['celebrations']">WEDDINGS &#38; CELEBRATIONS</a>
