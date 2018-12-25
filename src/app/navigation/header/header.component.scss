@@ -8,16 +8,20 @@
 	/* We change the color of top app bar */
   @include mdc-top-app-bar-fill-color($mdc-theme-primary-light);
 }
+.mdc-top-app-bar__row {
+	flex-direction: column;
+}
 #hamburger {
 	display: flex;
 	justify-content: space-between;
 }
-.mdc-top-app-bar__row {
-	flex-direction: column;
-}
 #mobile-navigation {
-	display: flex;
-	justify-content: space-around;
+	display: block;
+	padding: 0;
+	overflow: scroll;
+}
+#mobile-navigation a {
+	margin-right: 3rem;
 }
 #app-bar div.logo {
 	padding-top: 0.5rem;
@@ -36,7 +40,6 @@
 }
 #drawer .logo-wrapper {
 	padding: 1rem 2rem;
-
 }
 #drawer .logo-wrapper #logo {
 	width: 50%;

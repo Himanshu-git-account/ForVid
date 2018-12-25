@@ -1,3 +1,17 @@
+<ng-template #navigationTemplate let-showImage='showImage'>
+  <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['/']">HOME</a>
+        <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['accomodation']">ACCOMODATION</a>
+        <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['food-and-beverage']">FOOD &#38; BEVERAGE</a>
+        <ng-container *ngIf="showImage === 'true'">
+        <a class="image logo">
+          <img src="assets/images/theahotel_logo.png" alt="Thea Hotel">
+        </a>
+        </ng-container>
+        <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['lifestyle']">LIFESTYLE</a>
+        <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['celebrations']">WEDDINGS &#38; CELEBRATIONS</a>
+        <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['offers']">OFFERS</a>
+</ng-template>
+
 <aside #drawer id="drawer" class="mdc-drawer mdc-drawer--modal">
     <div class="mdc-drawer__content">
       <nav class="mdc-list">
@@ -42,21 +56,13 @@
       </section>
 
       <section #siteNavigation class="mdc-top-app-bar__section mdc-top-app-bar__section" id="site-navigation">
-        <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['/']">HOME</a>
-        <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['accomodation']">ACCOMODATION</a>
-        <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['food-and-beverage']">FOOD &#38; BEVERAGE</a>
-        <a class="image logo">
-          <img src="assets/images/theahotel_logo.png" alt="Thea Hotel">
-        </a>
-        <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['lifestyle']">LIFESTYLE</a>
-        <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['celebrations']">WEDDINGS &#38; CELEBRATIONS</a>
-        <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['offers']">OFFERS</a>
+        <ng-container *ngTemplateOutlet="navigationTemplate;context:{showImage: 'true'}">
+        </ng-container>
       </section>
 
       <section id="mobile-navigation"   class="mdc-top-app-bar__section mdc-top-app-bar__section" >
-        <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['accomodation']">ACCOMODATION</a>
-        <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['food-and-beverage']">FOOD &#38; BEVERAGE</a>
-        <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['offers']">OFFERS</a>
+        <ng-container *ngTemplateOutlet="navigationTemplate;context:{showImage: 'false'}">
+        </ng-container>
       </section>
     </div>
   </header>
