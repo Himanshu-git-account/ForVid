@@ -8,14 +8,31 @@
 	/* We change the color of top app bar */
   @include mdc-top-app-bar-fill-color($mdc-theme-primary-light);
 }
+#hamburger {
+	display: flex;
+	justify-content: space-between;
+}
+.mdc-top-app-bar__row {
+	flex-direction: column;
+}
+#mobile-navigation {
+	display: flex;
+	justify-content: space-around;
+}
+#app-bar div.logo {
+	padding-top: 0.5rem;
+}
+#app-bar div.logo img {
+	width: 75%;
+}
 #site-navigation {
 	/* Set header as flex to position all the navigation links with same space between them */
 	display: flex;
 	justify-content: space-around;
 }
-#site-navigation .image {
+#site-navigation .image.logo {
 	/* 32PX is half of topAppBar height, that's by default = 64px; */
-	margin-top: 32px;
+	margin-top: 64px;
 }
 #drawer .logo-wrapper {
 	padding: 1rem 2rem;
@@ -23,12 +40,13 @@
 }
 #drawer .logo-wrapper #logo {
 	width: 50%;
-
 }
 
+
 @media screen and (min-width: $screen-md-min) {
+	#mobile-navigation,
 	#hamburger {
-		display: none;
+		display: none !important;
 	}
 }
 @media screen and (max-width: $screen-md-min) {

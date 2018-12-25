@@ -26,30 +26,45 @@
 </aside>
 <div class="mdc-drawer-scrim">
 </div>
+
 <div class="mdc-drawer-app-content">
   <header class="mdc-top-app-bar" #topAppBar id="app-bar" [ngClass]="{'mdc-top-app-bar--prominent': this.isSmallScreen}">
     <div class="mdc-top-app-bar__row">
-      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start" id="hamburger">
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section" id="hamburger">
         <button class="material-icons mdc-top-app-bar__navigation-icon mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"(click)="this.toggleDrawer()">
           menu
         </button>
-      </section>
-      <section class="mdc-top-app-bar__section mdc-top-app-bar__section" id="site-navigation">
-          <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['/']">HOME</a>
-          <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['accomodation']">ACCOMODATION</a>
-          <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['food-and-beverage']">FOOD &#38; BEVERAGE</a>
-          <a class="mdc-top-app-bar__title" [routerLink]="['/']" class="image">
+        <div *ngIf="isSmallScreen" class="logo">
+          <a [routerLink]="['/']">
             <img src="assets/images/theahotel_logo.png" alt="Thea Hotel">
           </a>
-          <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['lifestyle']">LIFESTYLE</a>
-          <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['celebrations']">WEDDINGS &#38; CELEBRATIONS</a>
-          <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['offers']">OFFERS</a>
+        </div>
+      </section>
+
+      <section #siteNavigation class="mdc-top-app-bar__section mdc-top-app-bar__section" id="site-navigation">
+        <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['/']">HOME</a>
+        <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['accomodation']">ACCOMODATION</a>
+        <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['food-and-beverage']">FOOD &#38; BEVERAGE</a>
+        <a class="image logo">
+          <img src="assets/images/theahotel_logo.png" alt="Thea Hotel">
+        </a>
+        <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['lifestyle']">LIFESTYLE</a>
+        <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['celebrations']">WEDDINGS &#38; CELEBRATIONS</a>
+        <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['offers']">OFFERS</a>
+      </section>
+
+      <section id="mobile-navigation"   class="mdc-top-app-bar__section mdc-top-app-bar__section" >
+        <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['accomodation']">ACCOMODATION</a>
+        <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['food-and-beverage']">FOOD &#38; BEVERAGE</a>
+        <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['offers']">OFFERS</a>
       </section>
     </div>
   </header>
+
   <main class="main-content" id="main-content">
     <div class="mdc-top-app-bar--fixed-adjust">
       <ng-content></ng-content>
     </div>
   </main>
 </div>
+
