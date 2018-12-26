@@ -1,34 +1,38 @@
 @import "../../theahotel.scss";
+@import "@material/image-list/mdc-image-list";
 
-.home-wrapper .heading {
+
+.home-wrapper div.heading {
 	background-image: url(/assets/images/home_beach.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 125vh;
 }
-.home-wrapper .heading div {
+.home-wrapper div.heading div {
+	height: inherit;
+	position: relative;
 	padding-top: 10rem;
-}
-.home-wrapper .heading div p {
 	text-align: center;
+}
+.home-wrapper div.heading div p {
 	margin: 0;
 }
-.home-wrapper .heading div p:nth-child(1) {
+.home-wrapper div.heading div p:nth-child(1) {
 	color: rgba(0, 0, 0, 0.65);
 }
-.home-wrapper .heading div p:nth-child(2) {
+.home-wrapper div.heading div p:nth-child(2) {
 	color: #FFF;
 }
-.home-wrapper .heading div .icon-wrapper {
+.home-wrapper div.heading div .icon-wrapper {
 	margin-top: 7.5rem;
 }
-.home-wrapper .heading div .icon-wrapper i {
+.home-wrapper div.heading div .icon-wrapper i {
 	color: #FFF;
 	opacity: 0.75;
 	font-size: 5rem;
 	transform: rotate(90deg);
 }
-.home-wrapper .heading div p.country {
+.home-wrapper div.heading div p.country {
 	background: url(/assets/images/home_beach.jpg)center top;
 	font-stretch: normal;
 	color: rgba(1, 1, 1, 0);
@@ -42,17 +46,53 @@
 }
 
 @media screen and (max-width: $screen-md-min) {
-	.home-wrapper .heading div { 
+	.home-wrapper div.heading div { 
 		padding-top: 5rem;
 	}
-	.home-wrapper .heading div p:nth-child(1) {
+	.home-wrapper div.heading div p:nth-child(1) {
 		font-size: 2rem;
 	}
-	.home-wrapper .heading div p:nth-child(2) {
+	.home-wrapper div.heading div p:nth-child(2) {
 		font-size: 3.5rem;
 	}
-	.home-wrapper .heading div p.country {
-		font-size: 5rem;
-		bottom: -2.5rem;
+	.home-wrapper div.heading div p.country {
+		font-size: 3rem;
+		bottom: -1.5rem;
+	}
+}
+
+
+
+.home-wrapper .assortment {
+	padding-top: 5rem;
+	text-align: center;
+}
+.home-wrapper .assortment .heading { 
+	color: $mdc-theme-primary-light;
+}
+.home-wrapper .assortment hr {
+	border: 1px solid $mdc-theme-primary-light;
+	width: 33%;
+}
+.home-wrapper .assortment .description {
+	padding: 0 20vw;
+	letter-spacing: 0.5px;
+	line-height: 1.25rem;
+}
+
+.home-wrapper .assortment ul {
+	justify-content: center;
+	@include mdc-image-list-standard-columns(3,3rem)
+}
+
+
+@media screen and (max-width: $screen-sm-min) {
+	.home-wrapper .assortment ul {
+		@include mdc-image-list-standard-columns(2)
+	}
+}
+@media screen and (max-width: $screen-xs-min) {
+	.home-wrapper .assortment ul {
+		@include mdc-image-list-standard-columns(1)
 	}
 }

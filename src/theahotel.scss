@@ -1,12 +1,32 @@
 $mdc-typography-font-family: "Rubik, Roboto, sans-serif";
+$mdc-typography-styles-headline1: (
+  margin: 0
+);
+$mdc-typography-styles-headline2: (
+  margin: 0
+);
+$mdc-typography-styles-headline3: (
+  margin: 0
+);
+$mdc-typography-styles-headline4: (
+  margin: 0
+);
+$mdc-typography-styles-headline5: (
+  margin: 0
+);
+$mdc-typography-styles-headline6: (
+  margin: 0
+);
+
+
 @import "~@material/typography/mdc-typography";
 
 
-$mdc-theme-primary-light: #d7ebdf;
+$mdc-theme-primary-light: #C4E6D3;
 
 
 
-
+$screen-xs-min: 425px;
 $screen-sm-min: 768px;
 $screen-md-min: 992px;
 $screen-lg-min: 1200px;

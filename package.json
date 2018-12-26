@@ -24,6 +24,7 @@
     "@material/base": "^0.41.0",
     "@material/drawer": "^0.42.0",
     "@material/grid-list": "^0.42.0",
+    "@material/image-list": "^0.42.0",
     "@material/layout-grid": "^0.41.0",
     "@material/tab-bar": "^0.42.0",
     "@material/theme": "^0.41.0",
