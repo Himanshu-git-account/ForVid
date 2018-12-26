@@ -2,6 +2,8 @@
 @import "@material/image-list/mdc-image-list";
 
 
+
+
 .home-wrapper div.heading {
 	background-image: url(/assets/images/home_beach.jpg);
 	background-size: cover;
@@ -68,10 +70,10 @@
 	text-align: center;
 }
 .home-wrapper .assortment .heading { 
-	color: $mdc-theme-primary-light;
+	color: $mdc-theme-primary;
 }
 .home-wrapper .assortment hr {
-	border: 1px solid $mdc-theme-primary-light;
+	border: 1px solid $mdc-theme-primary;
 	width: 33%;
 }
 .home-wrapper .assortment .description {
@@ -84,7 +86,31 @@
 	justify-content: center;
 	@include mdc-image-list-standard-columns(3,3rem)
 }
-
+.home-wrapper .assortment ul li .content {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+.home-wrapper .assortment ul li .content .tape {
+	margin-top: 20%;
+}
+.home-wrapper .assortment ul li .content .tape p {
+	padding: 0.5rem 0;
+	background-color: rgba(251, 250, 192, 0.25);
+	color: #000;
+}
+.home-wrapper .assortment ul li .content div.button {
+	bottom: 4rem;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	width: 100%;
+}
+.home-wrapper .assortment ul li .content div.button button {
+	@include mdc-button-horizontal-padding(1.5rem);
+}
 
 @media screen and (max-width: $screen-sm-min) {
 	.home-wrapper .assortment ul {

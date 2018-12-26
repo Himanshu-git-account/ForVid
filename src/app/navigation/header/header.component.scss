@@ -6,7 +6,7 @@
 
 .mdc-top-app-bar {
 	/* We change the color of top app bar */
-  @include mdc-top-app-bar-fill-color($mdc-theme-primary-light);
+  @include mdc-top-app-bar-fill-color($mdc-theme-primary);
 }
 .mdc-top-app-bar__row {
 	flex-direction: column;
