@@ -1,5 +1,6 @@
 @import "../../theahotel.scss";
 @import "@material/image-list/mdc-image-list";
+@import "@material/list/mdc-list";
 
 
 
@@ -65,60 +66,135 @@
 
 
 
-.home-wrapper .assortment {
+.home-wrapper .housing {
 	padding-top: 5rem;
 	text-align: center;
 }
-.home-wrapper .assortment .heading { 
+.home-wrapper .housing .heading { 
 	color: $mdc-theme-primary;
 }
-.home-wrapper .assortment hr {
+.home-wrapper .housing hr {
 	border: 1px solid $mdc-theme-primary;
 	width: 33%;
 }
-.home-wrapper .assortment .description {
+.home-wrapper .housing .description {
 	padding: 0 20vw;
 	letter-spacing: 0.5px;
 	line-height: 1.25rem;
 }
 
-.home-wrapper .assortment ul {
+.home-wrapper .housing ul {
 	justify-content: center;
 	@include mdc-image-list-standard-columns(3,3rem)
 }
-.home-wrapper .assortment ul li .content {
+.home-wrapper .housing ul li .content {
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	right: 0;
 	left: 0;
 }
-.home-wrapper .assortment ul li .content .tape {
+.home-wrapper .housing ul li .content .tape {
 	margin-top: 20%;
 }
-.home-wrapper .assortment ul li .content .tape p {
+.home-wrapper .housing ul li .content .tape p {
 	padding: 0.5rem 0;
-	background-color: rgba(251, 250, 192, 0.25);
+	background-color: rgba(251, 250, 192, 0.35);
 	color: #000;
 }
-.home-wrapper .assortment ul li .content div.button {
+.home-wrapper .housing ul li .content div.button {
 	bottom: 4rem;
 	display: flex;
 	justify-content: center;
 	position: absolute;
 	width: 100%;
 }
-.home-wrapper .assortment ul li .content div.button button {
+.home-wrapper .housing ul li .content div.button button {
 	@include mdc-button-horizontal-padding(1.5rem);
 }
 
 @media screen and (max-width: $screen-sm-min) {
-	.home-wrapper .assortment ul {
+	.home-wrapper .housing ul {
 		@include mdc-image-list-standard-columns(2)
 	}
 }
 @media screen and (max-width: $screen-xs-min) {
-	.home-wrapper .assortment ul {
+	.home-wrapper .housing ul {
 		@include mdc-image-list-standard-columns(1)
+	}
+}
+
+
+
+.home-wrapper .propositions-wrapper {
+	background-image: url(/assets/images/propositions_background.jpg);
+	height: 80vh;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+}
+.home-wrapper .propositions-wrapper .propositions {
+	max-width: 50%;
+}
+.home-wrapper .propositions-wrapper .propositions ul {
+	background-color: rgba($mdc-theme-primary, 0.9);
+	padding: 3rem 0 3rem 3rem;
+	margin-top: 3rem;
+	@include mdc-image-list-standard-columns(2);
+}
+.home-wrapper .propositions-wrapper .propositions ul * {
+	color: #000;
+}
+.home-wrapper .propositions-wrapper .propositions ul li{
+	margin-bottom: 0.5rem !important;
+}
+.home-wrapper .propositions-wrapper .offers {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.home-wrapper .propositions-wrapper .offers .content {
+	padding: 1rem 7.5rem;
+}
+.home-wrapper .propositions-wrapper .offers .content p {
+	text-align: center;
+	color: #FFF;
+}
+.home-wrapper .propositions-wrapper .offers .content button {
+	margin-top: 3rem;
+}
+.home-wrapper .propositions-wrapper .offers .content hr {
+	border: 1px solid $mdc-theme-primary;
+}
+@media screen and (max-width: $screen-md-max) {
+	.home-wrapper .propositions-wrapper {	
+		background: none;
+		flex-direction: column;
+		height: auto;
+	}
+	.home-wrapper .propositions-wrapper .propositions {
+		max-width: 100%;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.home-wrapper .propositions-wrapper .propositions ul {
+		// width: 100%;
+		@include mdc-image-list-standard-columns(1);
+	}
+	.home-wrapper .propositions-wrapper .offers .content {
+		padding: 1rem;
+		text-align: center;
+	}
+	.home-wrapper .propositions-wrapper .offers .content hr {
+		display: none;
+	}
+	.home-wrapper .propositions-wrapper .offers .content button {
+		margin-top: 1rem;
+	}
+	.home-wrapper .propositions-wrapper .offers .content p {
+	text-align: center;
+	color: #000;
 	}
 }

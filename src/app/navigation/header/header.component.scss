@@ -2,6 +2,8 @@
 @import "@material/drawer/mdc-drawer";
 @import "@material/list/mdc-list";
 
+@import "@material/image-list/mdc-image-list";
+
 @import "../../../theahotel"; // To get variables
 
 .mdc-top-app-bar {
@@ -19,7 +21,20 @@
 	/* Set scrollable element in header in mobile version */
 	display: block;
 	padding: 0;
-	overflow: scroll;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}	
+#site-navigation ul {
+	height: 100%;
+	@include mdc-image-list-standard-columns(7)
+}
+#site-navigation ul li {
+	height: 100%;
+	width: auto !important;
+	margin: 0 auto !important;
+}
+#mobile-navigation ul {
+	flex-wrap: nowrap;
 }
 #mobile-navigation a {
 	/* Set scrollable element in header in mobile version */
@@ -33,13 +48,14 @@
 	width: 75%;
 }
 #site-navigation {
+	height: 64px;
 	/* Set header as flex to position all the navigation links with same space between them */
-	display: flex;
-	justify-content: space-around;
+	// display: flex;
+	// justify-content: space-around;
 }
 #site-navigation .image.logo {
 	/* 32PX is half of topAppBar height, that's by default = 64px; */
-	margin-top: 64px;
+	// margin-top: 64px;
 }
 #drawer .logo-wrapper {
 	padding: 1rem 2rem;
@@ -63,3 +79,6 @@
 		padding-top: 128px;
 	}
 }
+
+
+

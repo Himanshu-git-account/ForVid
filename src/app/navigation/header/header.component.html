@@ -1,16 +1,45 @@
 <ng-template #navigationTemplate let-showImage='showImage'>
-  <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['/']">HOME</a>
+  <ul class="mdc-image-list my-image-list">
+    <li class="mdc-image-list__item">
+      <div class="mdc-image-list__supporting">
+        <a class="mdc-image-list__label mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['/']">HOME</a>
+      </div>
+    </li>
+    <li class="mdc-image-list__item">
+      <div class="mdc-image-list__supporting">
         <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['accomodation']">ACCOMODATION</a>
+      </div>
+    </li>
+      <li class="mdc-image-list__item">
+      <div class="mdc-image-list__supporting">
         <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['food-and-beverage']">FOOD &#38; BEVERAGE</a>
-        <ng-container *ngIf="showImage === 'true'">
+      </div>
+    </li>
+      <li class="mdc-image-list__item" *ngIf="showImage === 'true'">
+        <div class="mdc-image-list__supporting">
           <a class="image logo">
             <img src="assets/images/theahotel_logo.png" alt="Thea Hotel">
           </a>
-        </ng-container>
+        </div>
+      </li>
+    <li class="mdc-image-list__item">
+      <div class="mdc-image-list__supporting">
         <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['lifestyle']">LIFESTYLE</a>
+      </div>
+    </li>
+    <li class="mdc-image-list__item">
+      <div class="mdc-image-list__supporting">
         <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['celebrations']">WEDDINGS &#38; CELEBRATIONS</a>
+      </div>
+    </li>
+    <li class="mdc-image-list__item">
+      <div class="mdc-image-list__supporting">
         <a class="mdc-top-app-bar__title mdc-typography--subtitle1" [routerLink]="['offers']">OFFERS</a>
+      </div>
+    </li>
+  </ul>
 </ng-template>
+
 
 <aside #drawer id="drawer" class="mdc-drawer mdc-drawer--modal">
     <div class="mdc-drawer__content">
