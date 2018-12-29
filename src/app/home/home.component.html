@@ -123,8 +123,7 @@
       <button class="mdc-button mdc-button--raised mdc-button--outlined">
         Button
       </button>
-    </div>
-  </div>
+    </div></div>
 
   <div class="cards">
     <div class="card mdc-card">
@@ -162,6 +161,71 @@
       </div>
     </div></div>
 
+  <div class="services">
+    <ul class="mdc-image-list " [ngClass]="this.isSmallScreen ? 'mdc-image-list--with-text-protection' : ''">
+      <li class="mdc-image-list__item ">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image" src="/assets/images/tourism.jpg">
+        </div>
+        <div class="mdc-image-list__supporting">
+          <p class="mdc-image-list__label" *ngIf="!this.isSmallScreen">
+            A marvelous combination of sightseeing and nightlife,
+            eco-tourism, shopping, island-hopping and people-watching. Phang-Nga
+            region of Thailand is virgin region and full of surprising that are thrilling,
+            adventuruos and magnificent.
+          </p>
+          <div class="mdc-image-list__label" *ngIf="this.isSmallScreen">
+            <span>ADVENTURE</span>
+            <span>70$</span>
+          </div>
+          <button class="mdc-button mdc-button--raised mdc-button--outlined">
+            VISIT PAGE
+          </button>
+        </div>
+      </li>
+      <li class="mdc-image-list__item">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image" src="/assets/images/kids.jpg">
+        </div>
+        <div class="mdc-image-list__supporting">
+          <p class="mdc-image-list__label" *ngIf="!this.isSmallScreen">
+            The monkey kids club features various activities for children
+            from the age 4 up to 12. The facility includes a child-friendly
+            environment with an indoor air-conditioned room as well as fun area,
+            gamse and various recrational activities.
+          </p>
+          <div class="mdc-image-list__label" *ngIf="this.isSmallScreen">
+            <span>KIDS CLUB</span>
+            <span>80$</span>
+          </div>
+          <button class="mdc-button mdc-button--raised mdc-button--outlined">
+            VISIT PAGE
+          </button>
+        </div>
+      </li>
+      <li class="mdc-image-list__item">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image" src="/assets/images/beach_romance.jpg">
+        </div>
+        <div class="mdc-image-list__supporting">
+          <p class="mdc-image-list__label" *ngIf="!this.isSmallScreen">
+            Renamed the Firefly Lounge, this is the center where the fishermen's torch burns - 
+            where all of the men come during the evening to rejoice of thei daily catches and share
+            fish stories. It is a vast area that offers music, wine, whiskey, pool table, drinking 
+            games and darts.
+          </p>
+          <div class="mdc-image-list__label" *ngIf="this.isSmallScreen">
+            <span>ROMANCE</span>
+            <span>70$</span>
+          </div>
+          <button class="mdc-button mdc-button--raised mdc-button--outlined">
+            VISIT PAGE
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
 
 </div>
 
@@ -173,7 +237,6 @@
   sight-seeing and attractions. For guests willing to venture their way into the Thai culture, our list of 
   activities will help them gain more knowledge about the Thai traditions and customs.</p>
   <p class="mdc-typography--subtitle2">ABOUT PHANGA, PHUKET</p></ng-template>
-
 <ng-template #card2>
   <p class="mdc-typography--subtitle2">ISLAND EXPLORATIONS &#38; YACHTING</p>
   <p class="mdc-typography--headline4">YACHT CHARTERS</p>
@@ -181,7 +244,6 @@
   Maikhao Dream luxuary yacht. This impressive luxure day-cruiser is ideal for cruising the calm waters ofthe Andaman Sea
   of the western coast of Thailand.</p>
   <p class="mdc-typography--subtitle2">LIFESTYLE</p></ng-template>
-
 <ng-template #card3> 
   <p class="mdc-typography--subtitle2">DISTINCTIVE DELICACIES</p>
   <p class="mdc-typography--headline4">FOOND &#38; BEVERAGE</p>
