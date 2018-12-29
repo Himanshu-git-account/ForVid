@@ -331,6 +331,16 @@
     "@material/animation" "^0.41.0"
     "@material/theme" "^0.41.0"
 
+"@material/floating-label@^0.42.0":
+  version "0.42.0"
+  resolved "https://registry.yarnpkg.com/@material/floating-label/-/floating-label-0.42.0.tgz#f460d90b30acc2de83e5b3c664545b89287d61c6"
+  dependencies:
+    "@material/animation" "^0.41.0"
+    "@material/base" "^0.41.0"
+    "@material/rtl" "^0.42.0"
+    "@material/theme" "^0.41.0"
+    "@material/typography" "^0.42.0"
+
 "@material/grid-list@^0.42.0":
   version "0.42.0"
   resolved "https://registry.yarnpkg.com/@material/grid-list/-/grid-list-0.42.0.tgz#071fc185a7359eb17de8851cf92d33b62fac96cd"
@@ -352,6 +362,14 @@
   version "0.41.0"
   resolved "https://registry.yarnpkg.com/@material/layout-grid/-/layout-grid-0.41.0.tgz#2e7d3be76313e0684d573b10c2c6a88b3230d251"
 
+"@material/line-ripple@^0.41.0":
+  version "0.41.0"
+  resolved "https://registry.yarnpkg.com/@material/line-ripple/-/line-ripple-0.41.0.tgz#de499b0d1dc7f60ddbf497bcc49be76475642d1f"
+  dependencies:
+    "@material/animation" "^0.41.0"
+    "@material/base" "^0.41.0"
+    "@material/theme" "^0.41.0"
+
 "@material/list@^0.42.0":
   version "0.42.0"
   resolved "https://registry.yarnpkg.com/@material/list/-/list-0.42.0.tgz#7bf19c09f223c31b9bae6969361939e3cf8cea48"
@@ -363,6 +381,17 @@
     "@material/shape" "^0.42.0"
     "@material/theme" "^0.41.0"
     "@material/typography" "^0.42.0"
+
+"@material/notched-outline@^0.42.1":
+  version "0.42.1"
+  resolved "https://registry.yarnpkg.com/@material/notched-outline/-/notched-outline-0.42.1.tgz#799e90e17a3ab5004f544f057a2a769634de58db"
+  dependencies:
+    "@material/animation" "^0.41.0"
+    "@material/base" "^0.41.0"
+    "@material/floating-label" "^0.42.0"
+    "@material/rtl" "^0.42.0"
+    "@material/shape" "^0.42.0"
+    "@material/theme" "^0.41.0"
 
 "@material/ripple@^0.42.0":
   version "0.42.0"
@@ -413,6 +442,21 @@
     "@material/ripple" "^0.42.0"
     "@material/rtl" "^0.42.0"
     "@material/tab-indicator" "^0.41.0"
+    "@material/theme" "^0.41.0"
+    "@material/typography" "^0.42.0"
+
+"@material/textfield@^0.42.1":
+  version "0.42.1"
+  resolved "https://registry.yarnpkg.com/@material/textfield/-/textfield-0.42.1.tgz#a5565082f4f3a72a2b4017cccf7d734cc2cde202"
+  dependencies:
+    "@material/animation" "^0.41.0"
+    "@material/base" "^0.41.0"
+    "@material/floating-label" "^0.42.0"
+    "@material/line-ripple" "^0.41.0"
+    "@material/notched-outline" "^0.42.1"
+    "@material/ripple" "^0.42.0"
+    "@material/rtl" "^0.42.0"
+    "@material/shape" "^0.42.0"
     "@material/theme" "^0.41.0"
     "@material/typography" "^0.42.0"
 

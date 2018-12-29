@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+import {MDCTextField} from '@material/textfield';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+	@ViewChild('emailForm') emailFormEl: ElementRef;
+	public emailForm;
+
+  constructor() {}
 
   ngOnInit() {
+  	this.emailForm = new MDCTextField(this.emailFormEl.nativeElement);
   }
 
 }

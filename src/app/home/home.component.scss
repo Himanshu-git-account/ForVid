@@ -3,6 +3,10 @@
 @import "@material/list/mdc-list";
 @import "@material/card/mdc-card";
 
+// @import "@material/card/mdc-card";
+@import "@material/button/mdc-button";
+@import "@material/textfield/mdc-text-field";
+
 
 
 
@@ -134,7 +138,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	display: flex;
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 }
 .home-wrapper .propositions-wrapper .propositions {
 	max-width: 50%;
@@ -182,7 +186,6 @@
 		padding-bottom: 0;
 	}
 	.home-wrapper .propositions-wrapper .propositions ul {
-		// width: 100%;
 		@include mdc-image-list-standard-columns(1);
 	}
 	.home-wrapper .propositions-wrapper .offers .content {
@@ -202,18 +205,38 @@
 }
 
 
+.home-wrapper .subscribe {
+	display: flex;
+	padding: 0.5rem 2rem;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+.home-wrapper .subscribe > * {
+	height: 100%;
+}
+.home-wrapper .subscribe > div { 
+	width: 50%;
+}
+.home-wrapper .subscribe .inputs {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.home-wrapper .subscribe .inputs > button {
+	flex-grow: 1;
+}
+.home-wrapper .subscribe .inputs > div {
+	margin-right: 1rem;
+	flex-grow: 2;
+}
+
+
+
 .home-wrapper .cards .card {
   height: auto;
   width: 350px;
   margin-bottom: 3rem;
 }
-
-// .home-wrapper .cards .card.yacht [class*="__actions"] {
-// 	width: 50%;
-// 	top: 25%;
-// 	right: 25%;
-// 	padding: 1rem 2rem;
-// }
 .home-wrapper .cards .card [class*="__actions"] {
 	display: block;
 }
