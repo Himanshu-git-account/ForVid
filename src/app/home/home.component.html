@@ -103,8 +103,55 @@
         <p class="mdc-typography--headline6">By now the most awesome offer, and secure your summer vacations on time</p>
         <button class="mdc-button mdc-button--raised mdc-button--outlined">VIEW OUR OFFERS</button>
       </div>
+    </div></div>
+
+  <div class="cards">
+    <div class="card mdc-card">
+      <div class="mdc-card__media media mdc-card__media--16-9" style="background-image: url(/assets/images/exotic_beach.jpg);">
+      </div>
+      <div class="mdc-card__actions">
+        <div class="card__mobile-content">
+          <ng-container *ngTemplateOutlet="card1"></ng-container>
+        </div>
+        <div class="inner-card mdc-card">
+          <ng-container *ngTemplateOutlet="card1"></ng-container>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mdc-card">
+      <div class="mdc-card__media media mdc-card__media--16-9" style="background-image: url(/assets/images/beach_restaurant.jpg);">
+      </div>
+      <div class="mdc-card__actions">
+        <div class="card__mobile-content">
+          <ng-container *ngTemplateOutlet="card2"></ng-container>
+        </div>
+        <div class="inner-card mdc-card">
+          <ng-container *ngTemplateOutlet="card2"></ng-container>
+        </div>
+      </div>
     </div>
   </div>
 
+
 </div>
 
+<ng-template #card1> 
+  <p class="mdc-typography--subtitle2">QUIET</p>
+        <p class="mdc-typography--headline4">EXOTIC BEACHES</p>
+        <p class="mdc-typography--subtitle1">Entertainment of our guests is a top priority, let it be 
+        either through our impeccable service, our live evening perfomances, or through local
+        sight-seeing and attractions. For guests willing to venture their way into the Thai culture, our list of 
+        activities will help them gain more knowledge about the Thai traditions and customs.</p>
+        <p class="mdc-typography--subtitle2">ABOUT PHANGA, PHUKET</p>
+</ng-template>
+
+
+<ng-template #card2> 
+  <p class="mdc-typography--subtitle2">DISTINCTIVE DELICACIES</p>
+  <p class="mdc-typography--headline4">FOOND &#38; BEVERAGE</p>
+  <p class="mdc-typography--subtitle1">Dining venues offer palatable dining for every taste and style, from
+  fresh, authentic Thai, Mediterranean spetialties, fresh seafood, home - grown organic vegetables, 
+to other international cuisines, in both casual and fine - dining settings.</p>
+  <p class="mdc-typography--subtitle2">FOOD &#38; BEVERAGE</p>
+</ng-template>
