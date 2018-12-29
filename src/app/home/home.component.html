@@ -119,15 +119,26 @@
       </div>
     </div>
 
+    <div class="card mdc-card yacht">
+      <div class="mdc-card__media media mdc-card__media--16-9 " style="background-image: url(/assets/images/yacht.jpg);">
+      </div>
+      <div class="mdc-card__actions mdc-card__media-content">
+          <ng-container *ngTemplateOutlet="card2"></ng-container>
+      </div>
+      <div class="card__mobile-content mdc-card__actions">
+          <ng-container *ngTemplateOutlet="card2"></ng-container>
+      </div>
+    </div>
+
     <div class="card mdc-card">
-      <div class="mdc-card__media media mdc-card__media--16-9" style="background-image: url(/assets/images/beach_restaurant.jpg);">
+      <div class="mdc-card__media media mdc-card__media--16-9 " style="background-image: url(/assets/images/beach_restaurant.jpg);">
       </div>
       <div class="mdc-card__actions">
         <div class="card__mobile-content">
-          <ng-container *ngTemplateOutlet="card2"></ng-container>
+          <ng-container *ngTemplateOutlet="card3"></ng-container>
         </div>
         <div class="inner-card mdc-card">
-          <ng-container *ngTemplateOutlet="card2"></ng-container>
+          <ng-container *ngTemplateOutlet="card3"></ng-container>
         </div>
       </div>
     </div>
@@ -138,20 +149,25 @@
 
 <ng-template #card1> 
   <p class="mdc-typography--subtitle2">QUIET</p>
-        <p class="mdc-typography--headline4">EXOTIC BEACHES</p>
-        <p class="mdc-typography--subtitle1">Entertainment of our guests is a top priority, let it be 
-        either through our impeccable service, our live evening perfomances, or through local
-        sight-seeing and attractions. For guests willing to venture their way into the Thai culture, our list of 
-        activities will help them gain more knowledge about the Thai traditions and customs.</p>
-        <p class="mdc-typography--subtitle2">ABOUT PHANGA, PHUKET</p>
-</ng-template>
+  <p class="mdc-typography--headline4">EXOTIC BEACHES</p>
+  <p class="mdc-typography--subtitle1">Entertainment of our guests is a top priority, let it be 
+  either through our impeccable service, our live evening perfomances, or through local
+  sight-seeing and attractions. For guests willing to venture their way into the Thai culture, our list of 
+  activities will help them gain more knowledge about the Thai traditions and customs.</p>
+  <p class="mdc-typography--subtitle2">ABOUT PHANGA, PHUKET</p></ng-template>
 
+<ng-template #card2>
+  <p class="mdc-typography--subtitle2">ISLAND EXPLORATIONS &#38; YACHTING</p>
+  <p class="mdc-typography--headline4">YACHT CHARTERS</p>
+  <p class="mdc-typography--subtitle1">Enjoy the thrill of yachting and cruising on the premier, 65-foot, tripple-decked
+  Maikhao Dream luxuary yacht. This impressive luxure day-cruiser is ideal for cruising the calm waters ofthe Andaman Sea
+  of the western coast of Thailand.</p>
+  <p class="mdc-typography--subtitle2">LIFESTYLE</p></ng-template>
 
-<ng-template #card2> 
+<ng-template #card3> 
   <p class="mdc-typography--subtitle2">DISTINCTIVE DELICACIES</p>
   <p class="mdc-typography--headline4">FOOND &#38; BEVERAGE</p>
   <p class="mdc-typography--subtitle1">Dining venues offer palatable dining for every taste and style, from
   fresh, authentic Thai, Mediterranean spetialties, fresh seafood, home - grown organic vegetables, 
-to other international cuisines, in both casual and fine - dining settings.</p>
-  <p class="mdc-typography--subtitle2">FOOD &#38; BEVERAGE</p>
-</ng-template>
+  to other international cuisines, in both casual and fine - dining settings.</p>
+  <p class="mdc-typography--subtitle2">FOOD &#38; BEVERAGE</p></ng-template>
